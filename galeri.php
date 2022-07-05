@@ -32,17 +32,17 @@
                     <a class="nav-link active" href="hakkimda.html">Hakkımda<span class="sr-only">(current)</span></a>
                </div>
                <div class="navbar-nav">
-                   <a class="nav-link active" href="galeri.php">Galeri<span class="sr-only">(current)</span></a>
+                   <a class="nav-link active" href="#">Galeri<span class="sr-only">(current)</span></a>
               </div>
               <div class="navbar-nav">
-                  <a class="nav-link active" href="#">İletişim<span class="sr-only">(current)</span></a>
+                  <a class="nav-link active" href="iletisim.html">İletişim<span class="sr-only">(current)</span></a>
              </div>
             </div>
         </nav>
     </header>
     <!-- header ends-->
     <main>
-      
+        
     </main>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
