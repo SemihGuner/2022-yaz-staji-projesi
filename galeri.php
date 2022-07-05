@@ -18,7 +18,8 @@
   <body>
     <!-- #A0AECD ve #000000 ana renkler -->
     <!-- header starts-->
-    <header>
+
+    <header style="margin: 60px;">
         <nav class="navbar navbar-expand-lg navbar-dark navbarrengi fixed-top">
             <a class="navbar-brand pr-5 font-weight-bold" href="index.html">semihguner.com</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,9 +44,38 @@
     <!-- header ends-->
     <!-- galeri start! -->
     <main>
-        <?php
-          echo 'hey there sugar';
-        ?>
+      <?php
+      echo "<h1>Hoşgeldiniz<br></h1>";
+      $servername = "mariadb";
+      $username = "semih";
+      $password = "semih";
+      $database = "testdb";
+      $mysqli = new mysqli($servername,$username,$password,$database,3306);
+      if ($mysqli -> connect_errno) 
+      {
+        echo "<h2>Failed to connect to MySQL: ($mysqli -> connect_error)</h2>";
+        exit();
+      } 
+      else
+      {
+        echo "<h2>MariaDB bağlandı.</h2>";
+      }
+
+      $query = mysqli_query($mysqli, "SELECT * FROM books ") or die (mysqli_error($dbconnect));
+      echo"<table border='1'>";
+      echo"<tr>";
+      echo"<td>ISBN</td>";
+      echo"<td>Title</td>";
+      echo"<td>Published Year</td>";
+      echo"</tr>";
+      while ($row = mysqli_fetch_array($query)){
+        echo "<tr>"; 
+        echo "<td>{$row['isbn']}</td>"; 
+        echo "<td>{$row['title']}</td>";
+        echo "<td>{$row['year_pub']}</td>"; 
+        echo "</tr>"; }
+      mysqli_close($mysqli);
+      ?>
     </main>
     <!-- galeri end! -->
 
