@@ -16,51 +16,66 @@
     </style>
   </head>
   <body>
-      <?php
-        $servername = "mariadb";
-        $username = "semih";
-        $password = "semih";
-        $database = "testdb";
-        $mysqli = new mysqli($servername,$username,$password,$database,3306);
-        if ($mysqli -> connect_errno) 
-        { 
-          echo "<div style=\"display:inline-block; margin-top:60px;\">";
-          echo "<img src=\"kizilampul.png\" alt=\"kırmızı yanan ampül png'si\" width=\"60px\">";
-          echo "<h2 style=\"display:inline; color:green;\">Hata! MySQL bağlantısı yapılamadı: ($mysqli -> connect_error)</h2>";
-          echo "</div>";
-          exit();
-        } 
-        else
-        {
-          echo "<div style=\"display:inline-block; margin-top:60px;\">";
-          echo "<img src=\"ampul.png\" alt=\"yanan ampül png'si\" width=\"60px\">";
-          echo "<h2 style=\"display:inline; color:green;\">MariaDB bağlandı.</h2>";
-          echo "</div>";
-        }
-      ?>
+    <!-- status check starts -->
+    <aside>
+      <div class="container-fluid pb-0 mb-0">
+        <div class="row">
+          <div class="col mr-0 ml-0 mt-5 pt-0">
+            <?php
+              $servername = "mariadb";
+              $username = "semih";
+              $password = "semih";
+              $database = "testdb";
+              $mysqli = new mysqli($servername,$username,$password,$database,3306);
+              if ($mysqli -> connect_errno) 
+              { 
+                echo "<div class=\"mt-2 float-right\">";
+                echo "<img src=\"kizilampul.png\" alt=\"kırmızı yanan ampül png'si\" width=\"30px\">";
+                echo "<h2 style=\"display:inline; color:red; font-size:20px;\">Hata! MySQL bağlantısı yapılamadı: ($mysqli -> connect_error)</h2>";
+                echo "</div>";
+                exit();
+              } 
+              else
+              {
+                echo "<div class=\"mt-2 float-right\">";
+                echo "<img src=\"ampul.png\" alt=\"yanan ampül png'si\" width=\"30px\">";
+                echo "<h2 style=\"display:inline; color:green; font-size:20px;\">MariaDB bağlandı.</h2>";
+                echo "</div>";
+              }
+            ?>
+          </div>
+        </div>
+      </div>
+    </aside> 
+    <!-- status check ends -->
     <!-- header starts-->
-
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark navbarrengi fixed-top">
-            <a class="navbar-brand pr-5 font-weight-bold" href="index.html">semihguner.com</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" href="index.html">Anasayfa<span class="sr-only">(current)</span></a>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-dark navbarrengi fixed-top">
+              <a class="navbar-brand pr-5 font-weight-bold" href="index.html">semihguner.com</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                      <a class="nav-link active" href="index.html">Anasayfa<span class="sr-only">(current)</span></a>
+                  </div>
+                  <div class="navbar-nav">
+                      <a class="nav-link active" href="hakkimda.html">Hakkımda<span class="sr-only">(current)</span></a>
                 </div>
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="hakkimda.html">Hakkımda<span class="sr-only">(current)</span></a>
-               </div>
-               <div class="navbar-nav">
-                   <a class="nav-link active" href="#">Galeri<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="#">Galeri<span class="sr-only">(current)</span></a>
+                </div>
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="iletisim.html">İletişim<span class="sr-only">(current)</span></a>
               </div>
-              <div class="navbar-nav">
-                  <a class="nav-link active" href="iletisim.html">İletişim<span class="sr-only">(current)</span></a>
-             </div>
-            </div>
-        </nav>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- header ends-->
     <!-- galeri start! -->
