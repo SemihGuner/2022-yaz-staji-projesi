@@ -80,7 +80,23 @@
     <!-- header ends-->
     <!-- galeri start! -->
     <main>
-          
+      <h1 style="text-align:center;" class="mb-3">Galeri</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+              
+          </div>
+          <div class="col">
+
+          </div>
+          <div class="col">
+
+          </div>
+          <div class="col">
+
+          </div>
+        </div>
+      </div>
     </main>
     <!-- galeri end! -->
 
