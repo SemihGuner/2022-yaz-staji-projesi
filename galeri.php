@@ -10,8 +10,14 @@
 
     <title>Semih Güner</title>
     <style>
-        .navbarrengi{
+        .navbarrengi
+        {
             background-color: #3462cf;
+        }
+        .w-100 
+        {
+        width: 100% !important;
+        height: 600px;
         }
     </style>
   </head>
@@ -25,7 +31,7 @@
               $servername = "mariadb";
               $username = "semih";
               $password = "semih";
-              $database = "testdb";
+              $database = "galeridb";
               $mysqli = new mysqli($servername,$username,$password,$database,3306);
               if ($mysqli -> connect_errno) 
               { 
@@ -68,9 +74,6 @@
                 <div class="navbar-nav">
                     <a class="nav-link active" href="#">Galeri<span class="sr-only">(current)</span></a>
                 </div>
-                <div class="navbar-nav">
-                    <a class="nav-link active" href="iletisim.html">İletişim<span class="sr-only">(current)</span></a>
-              </div>
               </div>
             </nav>
           </div>
@@ -80,22 +83,33 @@
     <!-- header ends-->
     <!-- galeri start! -->
     <main>
-      <h1 style="text-align:center;" class="mb-3">Galeri</h1>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-              
-          </div>
-          <div class="col">
-
-          </div>
-          <div class="col">
-
-          </div>
-          <div class="col">
-
-          </div>
+      <h1 style="text-align:center;">Galeri</h1>
+      <br> 
+      <div id="GaleriCarouseli" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#GaleriCarouseli" data-slide-to="0" class="active"></li>
+        <li data-target="#GaleriCarouseli" data-slide-to="1"></li>
+        <li data-target="#GaleriCarouseli" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/1920/600" class="d-block w-100" alt="IMG 1">
         </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1920/600" class="d-block w-100" alt="IMG 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1920/600" class="d-block w-100" alt="IMG 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#GaleriCarouseli" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Önceki</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#GaleriCarouseli" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Sonraki</span>
+      </button>
       </div>
     </main>
     <!-- galeri end! -->
