@@ -36,7 +36,7 @@
               if ($mysqli -> connect_errno) 
               { 
                 echo "<div class=\"mt-2 float-right\">";
-                echo "<img src=\"kizilampul.png\" alt=\"kırmızı yanan ampül png'si\" width=\"30px\">";
+                echo "<img src=\"./fotolar/kizilampul.png\" alt=\"kırmızı yanan ampül png'si\" width=\"30px\">";
                 echo "<h2 style=\"display:inline; color:red; font-size:20px;\">Hata! MySQL bağlantısı yapılamadı: ($mysqli -> connect_error)</h2>";
                 echo "</div>";
                 exit();
@@ -44,7 +44,7 @@
               else
               {
                 echo "<div class=\"mt-2 float-right\">";
-                echo "<img src=\"ampul.png\" alt=\"yanan ampül png'si\" width=\"30px\">";
+                echo "<img src=\"./fotolar/ampul.png\" alt=\"yanan ampül png'si\" width=\"30px\">";
                 echo "<h2 style=\"display:inline; color:green; font-size:20px;\">MariaDB bağlandı.</h2>";
                 echo "</div>";
               }
