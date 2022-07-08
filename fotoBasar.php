@@ -5,26 +5,24 @@ if(!empty($_GET['id'])){
     $username = 'semih';
     $password = 'semih';
     $db     = 'galeridb';
-    
-    //Create the connection and select the database
+    # Bağlan
     $db = new mysqli($host, $username, $password, $db);
-    
-    // Check the connection
+    # Bağlantı Kontrolü
     if($db->connect_error){
-        die("Connexion error: " . $db->connect_error);
+        die("Bağlantı hatası" . $db->connect_error);
     }
     
-    //Get the image from the database
+    #Resmi çek
     $res = $db->query("SELECT img FROM fotolar WHERE id = {$_GET['id']}");
     
     if($res->num_rows > 0){
         $img = $res->fetch_assoc();
         
-        //Render the image
+        #Resmi bas
         header("Content-type: image/png"); 
         echo $img['img']; 
     }else{
-        echo 'Image not found...';
+        echo 'Bu fotoğraf bulunamadı...';
     }
 }
 ?>
