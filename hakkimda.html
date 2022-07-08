@@ -13,6 +13,9 @@
             background-color: rgb(234, 226, 216);
             height:100vh;
         }
+        .navbar-brand{
+          margin-right: 0%;
+        }
     </style>
   </head>
   <body class="justify-content-center align-items-center">
