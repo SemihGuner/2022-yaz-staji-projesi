@@ -50,36 +50,44 @@
     </header>         
     <!-- Navbar Biter-->
     <main>
-      <h1 style="text-align:center;" class="mt-4">Galeri</h1>
-      <br> 
-      <div id="GaleriCarouseli" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#GaleriCarouseli" data-slide-to="0" class="active"></li>
-        <li data-target="#GaleriCarouseli" data-slide-to="1"></li>
-        <li data-target="#GaleriCarouseli" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="fotoBasar.php?id=1" class="d-block w-100" alt="IMG 1">
-        </div>
-        <div class="carousel-item">
-          <img src="fotoBasar.php?id=2" class="d-block w-100" alt="IMG 2">
-        </div>
-        <div class="carousel-item">
-          <img src="fotoBasar.php?id=3" class="d-block w-100" alt="IMG 3">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-target="#GaleriCarouseli" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Önceki</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-target="#GaleriCarouseli" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Sonraki</span>
-      </button>
-      </div>
+    <!-- Galeri start! -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+                <h1 style="text-align:center;" class="mt-4">Galeri</h1>
+            <br> 
+            <div id="GaleriCarouseli" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#GaleriCarouseli" data-slide-to="0" class="active"></li>
+              <li data-target="#GaleriCarouseli" data-slide-to="1"></li>
+              <li data-target="#GaleriCarouseli" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="fotoBasar.php?id=1" class="d-block w-100" alt="IMG 1">
+              </div>
+              <div class="carousel-item">
+                <img src="fotoBasar.php?id=2" class="d-block w-100" alt="IMG 2">
+              </div>
+              <div class="carousel-item">
+                <img src="fotoBasar.php?id=3" class="d-block w-100" alt="IMG 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#GaleriCarouseli" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Önceki</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#GaleriCarouseli" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Sonraki</span>
+            </button>
+            </div>
+                </div>
+              </div>
+            </div>
+    <!-- Galeri end! -->
     </main>
-    <!-- galeri end! -->
+    
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
