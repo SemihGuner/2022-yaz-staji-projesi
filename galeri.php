@@ -23,10 +23,10 @@
     <header class="mx-auto">
         <div class="container-fluid pl-0 pr-0"> 
             <div class="row">
-                <div class="col-8 offset-2">
+                <div class="col-12 col-md-8 offset-md-2">
                     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
                         <a class="navbar-brand font-weight-bold" style="font-family: 'Source Sans Pro', sans-serif; font-size: 30px;" href="index.html">
-                            <img src="/fotolar/semihguner.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                            <img src="/fotolar/semihguner.png" width="40" height="40" class="align-top mx-0" alt="">
                             SEMİH GÜNER
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,8 +45,9 @@
                     </nav>
                 </div>
             </div>
+            
         </div>
-    </header>     
+    </header>         
     <!-- Navbar Biter-->
     <main>
       <h1 style="text-align:center;" class="mt-4">Galeri</h1>
