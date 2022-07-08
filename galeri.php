@@ -52,9 +52,6 @@
     <!-- galeri start! -->
     <main>
       <br> <br> <br> <!-- sayfayı başka türlü aşağı atamadım. :( -->
-      <?php 
-        echo "fotoBasar.php?id=1";
-      ?>
       <h1 style="text-align:center;">Galeri</h1>
       <br> 
       <div id="GaleriCarouseli" class="carousel slide" data-ride="carousel">
