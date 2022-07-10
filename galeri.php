@@ -51,7 +51,7 @@
     <!-- Navbar Biter-->
     <main>
     <!-- Galeri start! -->
-      <div class="container">
+      <div class="container-fluid pl-0 pr-0 mx-auto">
         <div class="row">
           <div class="col">
                 <h1 style="text-align:center;" class="mt-4">Galeri</h1>
@@ -61,6 +61,7 @@
               <li data-target="#GaleriCarouseli" data-slide-to="0" class="active"></li>
               <li data-target="#GaleriCarouseli" data-slide-to="1"></li>
               <li data-target="#GaleriCarouseli" data-slide-to="2"></li>
+              <li data-target="#GaleriCarouseli" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -71,6 +72,9 @@
               </div>
               <div class="carousel-item">
                 <img src="fotoBasar.php?id=3" class="d-block w-100" alt="IMG 3">
+              </div>
+              <div class="carousel-item">
+                <img src="fotoBasar.php?id=4" class="d-block w-100" alt="IMG 4">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-target="#GaleriCarouseli" data-slide="prev">
